@@ -402,6 +402,55 @@ section {
     max-width: 30rem;
 }
 
+// "Схема работы"
+.scheme {
+    background: #fff  url(../img/scheme/scheme-bg.png) bottom -10rem right -10rem no-repeat;
+    background-size: 65rem;
+    &-block {
+        min-height: 30rem;
+    }
+    h3 {
+        font-size: 2rem;
+        .bold();
+    }
+}
+
+// "Всё на 100% включено"
+.all-inclusive {
+    background: @bg-light;
+    .media {
+        min-height: 9rem;
+        h4 {
+            .bold();
+            font-size: 1.6rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+    }
+}
+.circle {
+    display: inline-block;
+    background-color: @icons-color;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    &-border {
+        display: inline-block;
+        width: 5rem;
+        height: 5rem;
+        padding: 0.3rem;
+        border: 2px solid @icons-color;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 4rem;
+        color: @light;
+        .bold();
+        font-size: 1.9rem;
+    }
+}
+
+
 // Оформление модальных окон
 .popup {
     display: none;
@@ -450,6 +499,11 @@ section {
         }
         .fotorama {
             margin-bottom: 3rem;
+        }
+    }
+.all-inclusive {
+    .media {
+            min-height: 11rem;
         }
     }
 }
@@ -515,6 +569,13 @@ section {
         }
         &-next-btn {
             right: 0;
+        }
+    }
+    .scheme {
+        background: none;
+        text-align: center;
+        &-block {
+            min-height: 20rem;
         }
     }
 }
