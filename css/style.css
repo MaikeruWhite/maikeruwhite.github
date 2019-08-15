@@ -381,6 +381,62 @@ section {
   font-family: 'ProximaNova_bold', sans-serif;
   font-size: 1.9rem;
 }
+.problems {
+  position: relative;
+}
+.problems-women {
+  position: absolute;
+  width: 30rem;
+  bottom: 0;
+  left: 50%;
+  margin-left: -19rem;
+}
+.problems-list {
+  border: 4px solid;
+  padding: 2rem;
+  min-height: 35rem;
+  margin-bottom: 2rem;
+}
+.problems-list h4 {
+  font-size: 2.1rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.problems-list ul {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 2rem;
+}
+.problems-list li {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 3.5rem;
+}
+.problems-list li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+}
+.problems-list_bad {
+  border-color: #e8e8e8;
+}
+.problems-list_bad h4 {
+  opacity: 0.5;
+}
+.problems-list_bad ul li:before {
+  background: url(../img/problems/cross.svg) center no-repeat;
+  background-size: 60%;
+}
+.problems-list_good {
+  border-color: #358015;
+}
+.problems-list_good ul li:before {
+  background: url(../img/problems/check.svg) center no-repeat;
+  background-size: 60%;
+}
 .popup {
   display: none;
   position: fixed;
@@ -430,6 +486,9 @@ section {
   .all-inclusive .media {
     min-height: 11rem;
   }
+  .problems-list {
+    min-height: 40rem;
+  }
 }
 @media (max-width: 991px) {
   .main {
@@ -463,6 +522,12 @@ section {
     transform: translate(-50%, -50%);
   }
   .hand {
+    display: none;
+  }
+  .problems-list {
+    min-height: auto;
+  }
+  .problems-women {
     display: none;
   }
 }

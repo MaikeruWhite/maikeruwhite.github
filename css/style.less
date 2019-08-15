@@ -26,6 +26,7 @@
 .regular() {
     font-family: 'ProximaNova_regular', sans-serif;
 }
+
 .bold() {
     font-family: 'ProximaNova_bold', sans-serif;
 }
@@ -39,22 +40,30 @@
 @bg-light: #f5f5f5;
 @light: #fff;
 @border-input: #dddddd;
+@problems-color: #e8e8e8;
 
 // Basic settings
 html {
     font-size: 10px;
 }
+
 body {
     .regular();
 }
+
 a:hover {
     text-decoration: none;
 }
-button, input, a, textarea {
+
+button,
+input,
+a,
+textarea {
     &:focus {
         outline: none;
     }
 }
+
 .button {
     padding: 1rem 3rem;
     border-radius: 8px;
@@ -64,6 +73,7 @@ button, input, a, textarea {
     text-transform: uppercase;
     border: none;
     transition: all 0.2s;
+
     &:hover {
         cursor: pointer;
         background-color: darken(@btn-color, 5%);
@@ -72,6 +82,7 @@ button, input, a, textarea {
 
 //Оформление форм
 .form {
+
     // Поле для ввода
     &-input {
         display: block;
@@ -81,6 +92,7 @@ button, input, a, textarea {
         border-radius: 5px;
         padding: 1.5rem;
     }
+
     // Подписи к полям
     label {
         position: absolute;
@@ -91,6 +103,7 @@ button, input, a, textarea {
         font-size: 1.3rem;
         background-color: @light;
     }
+
     // Кнопка отправить заявку
     &-btn {
         display: block;
@@ -105,18 +118,22 @@ button, input, a, textarea {
 section {
     padding: 10rem 0;
 }
+
 .section-header {
     &_light {
-          color: @light;
-          margin-top: 0;
+        color: @light;
+        margin-top: 0;
     }
+
     h2 {
         .bold();
         font-size: 3.6rem;
     }
+
     p {
         font-size: 1.4rem;
     }
+
     margin: 2rem 0 10rem;
     text-align: center;
 }
@@ -127,23 +144,27 @@ section {
     padding: 3rem 0 5rem;
     background: #fff url(../img/main-bg.jpg) center center no-repeat;
     background-size: cover;
+
     &-content {
         // Главный заголовок
         margin-top: 10rem;
-    h1 {
-        margin-top: 0;
-        margin-bottom: 4rem;
-        .bold();
-        font-size: 4rem;
-        background-image: 1.45;
-        text-transform: uppercase;
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 4rem;
+            .bold();
+            font-size: 4rem;
+            background-image: 1.45;
+            text-transform: uppercase;
+        }
     }
-    }
+
     // Подзаголовок
     &-subtitle {
         margin-bottom: 4rem;
         font-size: 2.4rem;
     }
+
     // Зелёный ярлык
     span {
         display: inline-block;
@@ -152,12 +173,14 @@ section {
         color: @light;
         font-size: 1.8rem;
         text-align: center;
+
         // Цифра "300 рублей"
         strong {
             font-size: 3rem;
             .bold();
         }
     }
+
     // "Оплата по факту"
     &-trigger {
         display: block;
@@ -166,19 +189,23 @@ section {
         text-transform: uppercase;
         .bold();
     }
+
     // Главная форма
     &-form {
         background-color: @light;
         padding: 4rem 5rem;
         text-align: center;
+
         // Заголовок формы
         &-header {
             margin-bottom: 4rem;
             font-size: 1.8rem;
+
             strong {
                 font-size: 1.9rem;
             }
         }
+
         // Подпись под кнопкой
         small {
             display: block;
@@ -186,23 +213,28 @@ section {
         }
     }
 }
+
 .header {
     height: 7rem;
 }
+
 .wrap {
     display: table;
     width: 100%;
     height: 7rem;
+
     &-block {
         display: table-cell;
         vertical-align: middle;
         text-align: right;
     }
 }
+
 .phone {
     &-block {
         text-align: right;
     }
+
     &-link {
         display: inline-block;
         .bold();
@@ -218,42 +250,50 @@ section {
 .features {
     &-block {
         text-align: center;
+
         h3 {
             .bold();
             font-size: 2rem;
             margin-bottom: 3rem;
         }
+
         p {
             display: inline-block;
             width: 80%;
             font-size: 1.4rem;
         }
     }
-    &-img{
+
+    &-img {
         height: 8rem;
         margin-bottom: 3rem;
+
         img {
-             display: block;
-              margin: 0 auto;
+            display: block;
+            margin: 0 auto;
         }
     }
+
     .slick-active {
         outline: none;
     }
+
     .arrow {
         top: 50%;
-        transform: scaleY(-50%); 
+        transform: scaleY(-50%);
         position: absolute;
         z-index: 99;
         width: 2rem;
         height: 2rem;
         border: none;
     }
+
     .prev {
         background: url(../img/left-arrow.svg) center no-repeat;
         left: 0;
         background-size: 70%;
     }
+
     .next {
         background: url(../img/right-arrow.svg) center no-repeat;
         right: 0;
@@ -264,12 +304,15 @@ section {
 // Секция с ценами
 .price {
     background: @icons-color url(../img/prices/prices-bg.jpg) center;
+
     &-header-btn {
         margin-top: 2.5rem;
     }
+
     &-button {
         text-align: right;
     }
+
     // Оформление карточки с тарифами
     &-block {
         padding: 2rem 3rem 4rem;
@@ -277,11 +320,13 @@ section {
         background-color: @light;
         box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
         text-align: center;
+
         h4 {
             margin: 3rem 0;
             font-size: 1.9rem;
             .bold();
         }
+
         img {
             width: 100%;
             max-width: 30rem;
@@ -289,18 +334,21 @@ section {
             margin-bottom: 2rem;
         }
     }
+
     &-tag {
         display: block;
         margin-bottom: 2rem;
         font-size: 1.9rem;
         .bold();
     }
+
     &-list {
         padding: 0;
         list-style: none;
         min-height: 14rem;
         font-size: 1.6rem;
         line-height: 1.6;
+
         li {
             &:before {
                 content: '';
@@ -321,18 +369,22 @@ section {
     position: relative;
     background: url(../img/feedback/feedback-bg.png) no-repeat center;
     background-size: cover;
+
     &-prev-btn {
         left: -4rem;
     }
+
     &-next-btn {
         right: -4rem;
     }
+
     &-text {
         position: relative;
         margin-top: 2rem;
         padding: 1rem;
         border: 2px solid @icons-color;
         font-style: italic;
+
         &::before {
             content: '';
             display: block;
@@ -340,27 +392,32 @@ section {
             left: 5rem;
             top: -2rem;
             width: 2rem;
-            height: 2rem;   
+            height: 2rem;
             background-color: @light;
             border: 2px solid @icons-color;
             border-bottom: none;
             border-top-right-radius: 100px;
         }
     }
+
     &-slider {
         padding: 5rem 6rem;
         background-color: @light;
         box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+
         .media {
             margin-top: 3rem;
             font-size: 1.4rem;
+
             h4 {
                 .bold();
             }
         }
+
         p {
             font-size: 1.6rem;
         }
+
         &-btn {
             position: absolute;
             top: 50%;
@@ -369,26 +426,31 @@ section {
             height: 5rem;
             background-color: @icons-color;
             border: none;
+
             img {
                 width: 50%;
             }
         }
     }
+
     // Форма обратной связи
     &-form {
         margin-top: 5rem;
         padding: 4rem 10rem;
         background-color: @light;
         text-align: center;
+
         h3 {
             margin-bottom: 1rem;
             .bold();
             font-size: 2rem;
         }
+
         label {
             transform: translate(-50%, 8px)
         }
     }
+
     &-btn {
         max-width: 30rem;
         margin: auto;
@@ -404,11 +466,13 @@ section {
 
 // "Схема работы"
 .scheme {
-    background: #fff  url(../img/scheme/scheme-bg.png) bottom -10rem right -10rem no-repeat;
+    background: #fff url(../img/scheme/scheme-bg.png) bottom -10rem right -10rem no-repeat;
     background-size: 65rem;
+
     &-block {
         min-height: 30rem;
     }
+
     h3 {
         font-size: 2rem;
         .bold();
@@ -418,23 +482,28 @@ section {
 // "Всё на 100% включено"
 .all-inclusive {
     background: @bg-light;
+
     .media {
         min-height: 9rem;
+
         h4 {
             .bold();
             font-size: 1.6rem;
         }
+
         p {
             font-size: 1.1rem;
         }
     }
 }
+
 .circle {
     display: inline-block;
     background-color: @icons-color;
     width: 100%;
     height: 100%;
     border-radius: 50%;
+
     &-border {
         display: inline-block;
         width: 5rem;
@@ -450,8 +519,74 @@ section {
     }
 }
 
+//"Мы развеем все опасения"
+
+.problems {
+    position: relative;
+    &-women {
+        position: absolute;
+        width: 30rem;
+        bottom: 0;
+        left: 50%;
+        margin-left: -19rem;
+
+    }
+    &-list {
+        border: 4px solid;
+        padding: 2rem;
+        min-height: 35rem;
+        margin-bottom: 2rem;
+        h4 {
+            font-size: 2.1rem;
+            .bold();
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            padding-top: 2rem;
+        }
+
+        li {
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 3rem;
+                height: 3rem;
+            }
+
+            position: relative;
+            margin-bottom: 3rem;
+            padding-left: 3.5rem;
+        }
+
+        &_bad {
+            border-color: @problems-color;
+
+            h4 {
+                opacity: 0.5;
+            }
+
+            ul li:before {
+                background: url(../img/problems/cross.svg) center no-repeat;
+                background-size: 60%;
+            }
+        }
+        &_good {
+            border-color: #358015;
+            ul li:before {
+                background: url(../img/problems/check.svg) center no-repeat;
+                background-size: 60%;
+            }
+        }
+    }
+}
 
 // Оформление модальных окон
+
 .popup {
     display: none;
     position: fixed;
@@ -463,10 +598,12 @@ section {
     height: 100%;
     z-index: 9;
     background-color: rgba(0, 0, 0, 0.5);
+
     &-form {
         margin-top: 3rem;
         padding: 0;
     }
+
     &-close {
         position: absolute;
         top: -1.5rem;
@@ -478,6 +615,7 @@ section {
         font-size: 3rem;
         color: @light;
     }
+
     &-content {
         position: fixed;
         text-align: center;
@@ -487,23 +625,31 @@ section {
         transform: translateX(-50%);
         padding: 4rem 6rem;
     }
+
     &-header {
         .bold();
     }
 }
 
 @media (max-width: 1199px) {
-    .feedback{
+    .feedback {
         &-form {
             padding: 3rem 5rem;
         }
+
         .fotorama {
             margin-bottom: 3rem;
         }
     }
-.all-inclusive {
-    .media {
+
+    .all-inclusive {
+        .media {
             min-height: 11rem;
+        }
+    }
+    .problems {
+        &-list {
+            min-height: 40rem;
         }
     }
 }
@@ -512,32 +658,40 @@ section {
     .main {
         background-position: top left;
     }
+
     .phone-block {
         text-align: center;
     }
+
     .main-content {
         margin-top: 3rem;
     }
+
     .main-title {
         padding-bottom: 3rem;
         text-align: center;
     }
+
     .price {
         &-button {
             text-align: center;
             padding: 2rem 0;
         }
+
         &-header-btn {
             margin-top: 1rem;
             margin-bottom: 2rem;
         }
+
         &-block {
             margin-top: 2rem;
         }
     }
+
     .section-header_light {
         margin-bottom: 0;
     }
+
     .feedback {
         &-form {
             label {
@@ -548,32 +702,47 @@ section {
     .hand {
         display: none;
     }
+    .problems {
+        &-list {
+            min-height: auto;
+        }
+        &-women {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 767px) {
     .main {
         background-position: top left;
+
         h1 {
             font-size: 2.5rem;
         }
     }
+
     .header {
         text-align: center;
     }
+
     .wrap-block {
         text-align: center;
     }
+
     .feedback {
         &-prev-btn {
             left: 0;
         }
+
         &-next-btn {
             right: 0;
         }
     }
+
     .scheme {
         background: none;
         text-align: center;
+
         &-block {
             min-height: 20rem;
         }
