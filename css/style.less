@@ -585,6 +585,35 @@ section {
     }
 }
 
+// Блок "материалы"
+
+.materials {
+    background: @light url(../img/materials/materials-bg.jpg) center no-repeat;
+    background-size: cover;
+    &-slider {
+        padding-top: 4rem;
+        p {
+            width: 100%;;
+        }
+    }
+    &-link {
+        color: @icons-color;
+        border-bottom: 1px dotted @icons-color;
+        &:hover {
+            color: darken(@icons-color, 20%)
+        }
+        text-align: center;
+    }
+    &-offer {
+        margin-top: 4rem;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
 // Оформление модальных окон
 
 .popup {

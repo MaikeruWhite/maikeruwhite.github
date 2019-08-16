@@ -437,6 +437,31 @@ section {
   background: url(../img/problems/check.svg) center no-repeat;
   background-size: 60%;
 }
+.materials {
+  background: #fff url(../img/materials/materials-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.materials-slider {
+  padding-top: 4rem;
+}
+.materials-slider p {
+  width: 100%;
+}
+.materials-link {
+  color: #46b814;
+  border-bottom: 1px dotted #46b814;
+  text-align: center;
+}
+.materials-link:hover {
+  color: #235c0a;
+}
+.materials-offer {
+  margin-top: 4rem;
+}
+.materials img {
+  display: block;
+  margin: 0 auto;
+}
 .popup {
   display: none;
   position: fixed;
