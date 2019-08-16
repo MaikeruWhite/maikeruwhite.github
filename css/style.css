@@ -41,6 +41,11 @@ textarea:focus {
   cursor: pointer;
   background-color: #e3a103;
 }
+iframe {
+  width: 100% !important;
+  height: 400;
+  border: none;
+}
 .form-input,
 .form-textarea {
   display: block;
