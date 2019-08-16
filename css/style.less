@@ -41,6 +41,7 @@
 @light: #fff;
 @border-input: #dddddd;
 @problems-color: #e8e8e8;
+@upsell-bg: #286b0a;
 
 // Basic settings
 html {
@@ -593,7 +594,7 @@ section {
     &-slider {
         padding-top: 4rem;
         p {
-            width: 100%;;
+            width: 100%;
         }
     }
     &-link {
@@ -612,6 +613,40 @@ section {
         margin: 0 auto;
     }
 
+}
+
+// "Посмотрите как мы работаем"
+.tour {
+    background: @light url(../img/tour-bg.jpg) center no-repeat;
+    background-size: cover;
+    
+    &-subtitle {
+        font-size: 2.2rem;
+    }
+}
+
+//Дополнительные услуги
+
+.upsell {
+    background: @upsell-bg;
+    &-block {
+        &-s {
+            margin-top: 3rem;
+        }
+        img {
+            display: inline-block;
+            margin-bottom: 2rem;
+            width: 100%;
+            max-width: 30rem;
+
+        }
+        p {
+            font-size: 2rem;
+        }
+        text-align: center;
+        color: @light;
+        min-height: 30rem;
+    }
 }
 
 // Оформление модальных окон
@@ -738,6 +773,10 @@ section {
         &-women {
             display: none;
         }
+    }
+    .tour {
+        background: none;
+        background-color: @bg-light;
     }
 }
 
