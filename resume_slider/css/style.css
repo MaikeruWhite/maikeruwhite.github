@@ -332,6 +332,7 @@ summary {
   }
   .navbar-001 .carousel-indicators {
     margin-bottom: 10px;
+    z-index: 5;
   }
   .navbar-001 .carousel-indicators li {
     border: 1px solid #000;
