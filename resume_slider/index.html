@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" href="fonts/css/all.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <title>Slider</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="navbar-001">
+            <!-- Demonstration -->
+            <!-- <div class="start " >
+                <button class="start-button fadeIn" data-nekoanim="fadeIn" data-nekodelay="0">
+                    Начать демонстрацию
+                </button>
+            </div> -->
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators visible-xs visible-sm">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                    <li data-target="#carousel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+
+                    <div class="item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="slider-content">
+                                    <div
+                                        class="col-xs-6 col-xs-offset-3 col-sm-8 col-sm-offset-4">
+                                        <h1>Этот текст добавлен для демонстрации на странице</h1>
+                                        <h2 class="hidden-xs">Акция действует с 01.07.18 по 31.07.18</h2>
+                                        <h2 class="visible-xs">Тест на внимательность</h2>
+                                        <button class="slider-buttons detals">Подробнее</button>
+                                        <button class="slider-buttons stocks hidden-xs">Все акции</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="slider-content">
+                                    <div
+                                        class="col-xs-6 col-xs-offset-3 col-sm-8 col-sm-offset-4">
+                                        <h1>Этот текст добавлен для демонстрации на странице</h1>
+                                        <h2 class="hidden-xs">Акция действует с 01.07.18 по 31.07.18</h2>
+                                        <h2 class="visible-xs">Тест на внимательность</h2>
+                                        <button class="slider-buttons detals">Подробнее</button>
+                                        <button class="slider-buttons stocks hidden-xs">Все акции</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="slider-content">
+                                    <div
+                                        class="col-xs-6 col-xs-offset-3 col-sm-8 col-sm-offset-4">
+                                        <h1>Этот текст добавлен для демонстрации на странице</h1>
+                                        <h2 class="hidden-xs">Акция действует с 01.07.18 по 31.07.18</h2>
+                                        <h2 class="visible-xs">Тест на внимательность</h2>
+                                        <button class="slider-buttons detals">Подробнее</button>
+                                        <button class="slider-buttons stocks hidden-xs">Все акции</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="slider-content">
+                                    <div
+                                        class="col-xs-6 col-xs-offset-3 col-sm-8 col-sm-offset-4">
+                                        <h1>Этот текст добавлен для демонстрации на странице</h1>
+                                        <h2 class="hidden-xs">Акция действует с 01.07.18 по 31.07.18</h2>
+                                        <h2 class="visible-xs">Тест на внимательность</h2>
+                                        <button class="slider-buttons detals">Подробнее</button>
+                                        <button class="slider-buttons stocks hidden-xs">Все акции</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <!-- Controls -->
+                <a class="arrow arrow-left hidden-xs" href="#carousel" data-slide="prev">
+                    <span class="arrow-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+                </a>
+                <a class="arrow arrow-right hidden-xs" href="#carousel" data-slide="next">
+                    <span class="arrow-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                </a>
+            </div>
+            <!-- Slider menu -->
+            <div class="container slider-menu">
+                <button class="slider-menu-button active col-md-3 hidden-xs hidden-sm" data-target="#carousel"
+                    data-slide-to="0">
+                    <div class="media">
+                        <div class="media-left">
+                            <img class="media-object" src="img/preview/slider_1pre.jpg" alt="...">
+                        </div>
+                        <div class="media-body">
+                            <h3>Акция действует с 01.07.18</h3>
+                            <p>Этот текст добавлен для демонстрации на
+                                странице</p>
+                        </div>
+                    </div>
+                </button>
+                <button class="slider-menu-button col-md-3 hidden-xs hidden-sm" data-target="#carousel"
+                    data-slide-to="1">
+                    <div class="media">
+                        <div class="media-left">
+                            <img class="media-object" src="img/preview/slider_2pre.jpg" alt="...">
+                        </div>
+                        <div class="media-body">
+                            <h3>Акция действует с 01.07.18</h3>
+                            <p>Этот текст добавлен для демонстрации на
+                                странице</p>
+                        </div>
+                    </div>
+                </button>
+                <button class="slider-menu-button col-md-3 hidden-xs hidden-sm" data-target="#carousel"
+                    data-slide-to="2">
+                    <div class="media">
+                        <div class="media-left">
+                            <img class="media-object" src="img/preview/slider_3pre.jpg" alt="...">
+                        </div>
+                        <div class="media-body">
+                            <h3>Акция действует с 01.07.18</h3>
+                            <p>Этот текст добавлен для демонстрации на
+                                странице</p>
+                        </div>
+                    </div>
+                </button>
+                <button class="slider-menu-button col-md-3 hidden-xs hidden-sm" data-target="#carousel"
+                    data-slide-to="3">
+                    <div class="media">
+                        <div class="media-left">
+                            <img class="media-object" src="img/preview/slider_4pre.jpg" alt="...">
+                        </div>
+                        <div class="media-body">
+                            <h3>Акция действует с 01.07.18</h3>
+                            <p>Этот текст добавлен для демонстрации на
+                                странице</p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+
+        </div>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function () {
+            //при нажатию на любую кнопку, имеющую класс .btn
+            $('.start-button').on('click', function (event) {
+                event.preventDefault();
+                $('.start').hide();
+            });
+        });
+    </script>
+</body>
+
+</html>
