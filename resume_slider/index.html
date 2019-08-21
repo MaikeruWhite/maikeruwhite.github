@@ -18,11 +18,11 @@
     <main class="main">
         <div class="navbar-001">
             <!-- Demonstration -->
-            <!-- <div class="start " >
+            <div class="start " >
                 <button class="start-button fadeIn" data-nekoanim="fadeIn" data-nekodelay="0">
                     Начать демонстрацию
                 </button>
-            </div> -->
+            </div>
             <div id="carousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators visible-xs visible-sm">
@@ -175,8 +175,9 @@
             //при нажатию на любую кнопку, имеющую класс .btn
             $('.start-button').on('click', function (event) {
                 event.preventDefault();
-                $('.start').hide();
+                $('.start').fadeOut(5000);
             });
+            
         });
     </script>
 </body>
