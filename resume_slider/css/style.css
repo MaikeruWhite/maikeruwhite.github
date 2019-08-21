@@ -74,6 +74,7 @@ summary {
 }
 .navbar-001 {
   font-family: 'Open Sans', sans-serif;
+  /* Demonstration */
 }
 .navbar-001 .item {
   height: 675px;
@@ -112,7 +113,6 @@ summary {
   margin-top: 26px;
   border-radius: 3px;
   text-transform: uppercase;
-  margin-bottom: 232px;
   border: none;
   outline: none;
 }
@@ -164,6 +164,10 @@ summary {
 }
 .navbar-001 .slider-menu-button:last-child {
   margin-right: 0;
+}
+.navbar-001 .slider-menu a {
+  cursor: pointer;
+  text-decoration: none;
 }
 .navbar-001 .arrow {
   position: absolute;
@@ -256,18 +260,34 @@ summary {
   }
 }
 @media (max-width: 991px) {
+  .navbar-001 .item {
+    height: 675px;
+  }
   .navbar-001 .item:nth-child(n) {
     background-position: 40% 0;
   }
-  .navbar-001 .carousel-indicators li {
-    border: 1px solid #000;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    margin-bottom: 90px;
+  .navbar-001 .slider-menu {
+    margin-top: -80px;
   }
-  .navbar-001 .carousel-indicators .active {
-    background-color: #000;
+  .navbar-001 .slider-menu-button {
+    margin-right: 5px;
+    padding: 3px;
+  }
+  .navbar-001 .slider-menu-button .media-object {
+    width: 40px;
+  }
+  .navbar-001 .slider-menu-button h3 {
+    font-size: 7px;
+  }
+  .navbar-001 .slider-menu-button p {
+    font-size: 9px;
+  }
+  .navbar-001 .slider-content h1 {
+    font-size: 28px;
+  }
+  .navbar-001 .slider-content h2 {
+    font-size: 20px;
+    margin-top: 15px;
   }
 }
 @media (max-width: 767px) {
@@ -293,8 +313,7 @@ summary {
   .navbar-001 .slider-content {
     display: block;
     margin: 0 auto;
-    width: 100%;
-    margin-top: 101px;
+    margin-top: 120px;
   }
   .navbar-001 .slider-content h1 {
     text-align: center;
@@ -311,6 +330,9 @@ summary {
     text-align: center;
     margin-top: 25px;
   }
+  .navbar-001 .carousel-indicators {
+    margin-bottom: 10px;
+  }
   .navbar-001 .carousel-indicators li {
     border: 1px solid #000;
     width: 14px;
@@ -322,7 +344,19 @@ summary {
     background-color: #000;
   }
 }
-@media (max-width: 509px) {
+@media (max-width: 730px) {
+  .navbar-001 .slider-content div {
+    width: 66%;
+    margin-left: 17%;
+  }
+}
+@media (max-width: 560px) {
+  .navbar-001 .slider-content div {
+    width: 76%;
+    margin-left: 12%;
+  }
+}
+@media (max-width: 480px) {
   .navbar-001 .slider-content div {
     width: 100%;
     margin-left: 0;

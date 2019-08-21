@@ -36,7 +36,6 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
 
     
 
-
     .slider-content {
         color: #000;
         margin-top: 227px;
@@ -57,7 +56,6 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
             border: none;
             border-radius: 3px;
             text-transform: uppercase;
-            margin-bottom: 232px;
             border: none;
             outline: none;
         }
@@ -122,7 +120,10 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
         &-button:last-child {
             margin-right: 0;
         }
-
+        a {
+            cursor: pointer;
+            text-decoration: none;
+        }
     }
 
     .arrow {
@@ -146,6 +147,8 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
             padding: 27px 20px 27px 12px;
         }
     }
+
+    /* Demonstration */
 
     .start {
         position: absolute;
@@ -247,19 +250,36 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
             &:nth-child(n) {
                 background-position: 40% 0;
             }
+            height: 675px;
+        }    
+        .slider-menu {
+            margin-top: -80px;
         }
 
-        .carousel-indicators {
-            li {
-                border: 1px solid #000;
-                width: 20px;
-                height: 20px;
-                margin-right: 10px;
-                margin-bottom: 90px;
+        .slider-menu-button {
+            margin-right: 5px;
+            padding: 3px;
+
+            .media-object {
+                width: 40px;
             }
 
-            .active {
-                background-color: #000;
+            h3 {
+                font-size: 7px;
+            }
+
+            p {
+                font-size: 9px;
+            }
+        }
+        .slider-content {
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 20px;
+                margin-top: 15px;
             }
         }
     }
@@ -296,8 +316,7 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
         .slider-content {
             display: block;
             margin: 0 auto;
-            width: 100%;
-            margin-top: 101px;
+            margin-top: 120px;
 
             h1 {
                 text-align: center;
@@ -320,6 +339,7 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
         }
 
         .carousel-indicators {
+            margin-bottom: 10px;
             li {
                 border: 1px solid #000;
                 width: 14px;
@@ -336,7 +356,25 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
     }
 }
 
-@media (max-width: 509px) {
+@media (max-width: 730px) {
+    .navbar-001 {
+        .slider-content div {
+            width: 66%;
+            margin-left: 17%;
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .navbar-001 {
+        .slider-content div {
+            width: 76%;
+            margin-left: 12%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
     .navbar-001 {
         .slider-content div {
             width: 100%;
